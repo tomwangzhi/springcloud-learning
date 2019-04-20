@@ -6,8 +6,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-@EnableDiscoveryClient
-@EnableFeignClients
+@EnableDiscoveryClient  // 开启服务发现客户端来进行服务的调用
+@EnableFeignClients     // 开启Feign的客户端功能
 public class SpringcloudEurekaServiceFeignApplication {
 
 	public static void main(String[] args) {
